@@ -1,0 +1,23 @@
+@import "../modules/_globals";
+
+.btn-secondary {
+  background-color: rgb(235, 233, 233);
+}
+
+// .rigth__nav-a {
+//     color: $accent-brand-lighter !important;
+// }
+
+.rigth__nav-li {
+  &:hover {
+    background-color: rgb(255, 254, 254) !important;
+    .rigth__nav-a {
+      color: $accent-brand-lighter !important;
+    }
+  }
+}
+.rigth__nav-a {
+  &:hover {
+    color: $accent-brand-lighter !important;
+  }
+}

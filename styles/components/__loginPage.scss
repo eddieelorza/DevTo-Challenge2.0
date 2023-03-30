@@ -1,0 +1,33 @@
+@import "../modules/_globals";
+
+
+.form-container {
+  background-color: #f6f6f6;
+}
+
+.form-card {
+  background-color: rgb(255, 254, 254);
+
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.card-title-form {
+  font-size: 30px;
+  font-family: $ff-sans-serif;
+  font-weight: bold;
+}
+.input-title {
+  display: flex;
+  font-size: 16px;
+  font-family: $ff-sans-serif;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3.5rem;
+}
+
+.btn-continue {
+  margin-bottom: 2rem;
+}

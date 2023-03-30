@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32.png"
+    />
+    <title>DEV Community 👩‍💻👨‍💻</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar - Karen -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-white">
+        <div
+          class="container d-flex flex-row justify-content-between align-items-center w-100"
+        >
+          <div class="d-flex align-items-center">
+            <button
+              class="navbar-toggler border border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../views/home.html">
+              <img
+                src="../assets/dev-badge.svg"
+                alt="logo"
+                width="40"
+                height="40"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <div
+              class="input-group border rounded-2 align-items-center d-none d-lg-flex"
+            >
+              <input
+                type="search"
+                class="form-control border border-0"
+                placeholder="Search..."
+              />
+              <div class="input-group-append">
+                <button class="btn" type="button">
+                  <img src="../assets/search-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="button"
+              class="btn btn-outline-primary d-none d-lg-inline"
+            >
+              Create Post
+            </button>
+            <img
+              src="../assets/search-icon.svg"
+              alt="search"
+              class="iconsearch d-lg-none"
+              width="24"
+              height="24"
+            />
+            <img
+              src="../assets/notification-icon.svg"
+              alt="bell"
+              class="iconbell"
+              width="24"
+              height="24"
+            />
+            <img
+              src="../assets/profile-avatar.webp"
+              alt="profile avatar"
+              width="40"
+              height="40"
+              class="rounded-circle"
+            />
+          </div>
+        </div>
+      </nav>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            DEV Community 👩‍💻👨‍💻
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <ul class="list-options px-2">
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/home-icon.svg" alt="" />
+              </i>
+              Home
+            </a>
+          </li>
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/listings-icon.svg" alt="" />
+              </i>
+              Listings
+            </a>
+          </li>
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/podcast-icon.svg" alt="" />
+              </i>
+              Podcasts
+            </a>
+          </li>
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/video-icon.svg" alt="" />
+              </i>
+              Videos
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/tag-icon.svg" alt="" />
+              </i>
+              Tags
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/faq-icon.svg" alt="" />
+              </i>
+              FAQ
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/foremShop-icon.svg" alt="" />
+              </i>
+              Forem Shop
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/sponsors-icon.svg" alt="" />
+              </i>
+              Sponsors
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/about-icon.svg" width="20" alt="" />
+              </i>
+              About
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/contact-icon.svg" width="20" alt="" />
+              </i>
+              Contact
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/guides-icon.svg" width="20" alt="" />
+              </i>
+              Guides
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img
+                  src="../assets/softwareComparison-icon.svg"
+                  width="20"
+                  alt=""
+                />
+              </i>
+              Software comparisons
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list-options px-2">
+          <h6 class="">Other</h6>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/codeConduct-icon.svg" width="20" alt="" />
+              </i>
+              Code of Conduct
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/privacyPolicy-icon.svg" width="20" alt="" />
+              </i>
+              Privacy Policy
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/terms-icon.svg" width="20" alt="" />
+              </i>
+              Terms of Use
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-around px-2">
+          <img src="../assets/tw-icon.svg" alt="" />
+          <img src="../assets/fb-icon.svg" alt="" />
+          <img src="../assets/gh-icon.svg" alt="" />
+          <img src="../assets/ig-icon.svg" alt="" />
+          <img src="../assets/twt-icon.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- End: Navba
+    <!-- End: Navbar - Karen -->
+
+    <!-- Principal Content - TEAM 6 -->
+    <section class="container my-3">
+      <section class="row">
+        <!-- Left Aside - manu -->
+        <aside class="left-aside col-12 col-md-1 col-lg-1">
+          <div
+            class="left-aside__div d-flex justify-content-around d-md-block d-lg-block object-fit-contain"
+          >
+            <button
+              type="button"
+              class="left-aside__div-button d-lg-block my-1 p-2 position-relative"
+            >
+              <img
+                class="heart rounded-circle p-2 d-sm-inline d-lg-block"
+                src="../assets/heart-icon.svg"
+                alt=""
+              />
+              <p class="d-sm-inline d-lg-block">7</p>
+              <p
+                class="msj d-none position-absolute text-white bg-dark rounded p-2"
+              >
+                Like
+              </p>
+            </button>
+
+            <button
+              type="button"
+              class="left-aside__div-button d-lg-block my-1 p-2 position-relative"
+            >
+              <img
+                class="comment rounded-circle p-2 d-sm-inline d-lg-block"
+                src="../assets/comment-icon.svg"
+                alt=""
+              />
+              <p class="d-sm-inline d-lg-block">10</p>
+              <p
+                class="msj d-none position-absolute text-white bg-dark rounded p-2"
+              >
+                Jump to Comments
+              </p>
+            </button>
+
+            <button
+              type="button"
+              class="left-aside__div-button d-lg-block my-1 p-2 position-relative"
+            >
+              <img
+                class="save rounded-circle p-2 d-sm-inline d-lg-block"
+                src="../assets/save-icon.svg"
+                alt=""
+              />
+              <p class="d-sm-inline d-lg-block">1</p>
+              <p
+                class="msj d-none position-absolute text-white bg-dark rounded p-2"
+              >
+                Save
+              </p>
+            </button>
+
+            <button
+              type="button"
+              class="left-aside__div-button d-lg-block my-1"
+            >
+              <img
+                class="dots rounded-circle p-2"
+                src="../assets/three-dots.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </aside>
+        <!--End: Left Aside - Manu -->
+
+        <!--Principal Main - Eddie -->
+        <main class="col-12 col-lg-8 col-md-8">
+          <section class="">
+            <div class="card">
+              <img id="post-image" src="" class="card-img-top" alt="..." />
+              <div class="card-body py-4 px-5">
+                <div class="d-flex mb-3 align-items-center">
+                  <img
+                    class="rounded-circle border object-fit-cover me-3"
+                    src="https://i.pravatar.cc/"
+                    style="width: 40px"
+                  />
+                  <span class="d-flex flex-column">
+                    <h5 class="author fs-6 fw-bold"></h5>
+                    <span id="post-date" class="fs-6 fw-light"></span>
+                  </span>
+                </div>
+                <div id="post-tags" class="">
+                  <h1 id="post-title" class="card-title"></h1>
+                  <ul id="list-tags" class="list-tag__main"></ul>
+                </div>
+                <div id="post-content" class="card-text"></div>
+              </div>
+              <hr />
+              <div class="px-5 py-3">
+                <div class="d-flex justify-content-between mb-5">
+                  <h4>Top comments <span id="comment-length"></span></h4>
+                  <p class="w-50">
+                    Unable to load Comment Subscription component. Try
+                    refreshing the page.
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="rounded-circle border object-fit-cover me-3"
+                    src="https://i.pravatar.cc/"
+                    style="width: 40px; height: 40px"
+                  />
+                  <div class="card-comment_wrapper w-100 p-3">
+                    <input type="text" class="form-control" placeholder="name"  id="name-comment" />
+                    <textarea
+                      class="form-control mt-3"
+                      id="text-comment"
+                      rows="4"
+                    ></textarea>
+                  </div>
+               
+                </div>
+                <div class="ms-5 ps-4 mb-5">
+                  <button type="button" class="btn btn-primary mt-3" id="comment-btn">
+                    Comment
+                  </button>
+
+                </div>
+                <div id="comment-wrapper">
+
+                </div>
+                
+              </div>
+            </div>
+          </section>
+        </main>
+        <!--End: Principal Main - Eddie -->
+
+        <!-- Right Aside - Manu -->
+        <aside class="d-none d-lg-block col-12 col-lg-3">
+          <div class="card p-3">
+            <a href="" class="text-decoration-none text-black">
+              <div class="d-flex mb-3 align-items-center">
+                <img
+                  class="rounded-circle border object-fit-cover me-3"
+                  src="https://i.pravatar.cc/"
+                  style="width: 40px"
+                />
+                <span class="d-flex flex-column">
+                  <h5 class="author fs-5 fw-bold"></h5>
+                </span>
+              </div>
+            </a>
+            <button class="btn btn-primary mb-3" type="button">Follow</button>
+            <p class="fw-bold fs-6 m-0">JOINED</p>
+            <p class="fs-6 m-0">23 Mar 2022</p>
+          </div>
+          <div class="card mt-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item fw-bold fs-5">
+                More from
+                <a class="text-decoration-none fs-5 fw-bold" href=""
+                  >Scofield Idehen</a
+                >
+              </li>
+              <a href="" class="rigth__nav-li list-group-item">
+                <p class="rigth__nav-a">How to Integrate ChatGPT to WhatsApp</p>
+                <p class="fs-6 text-opacity-25">
+                  #ai #chatgpt #javascript #machinelearnig
+                </p></a
+              >
+              <a href="" class="rigth__nav-li list-group-item">
+                <p class="rigth__nav-a">How to use /*Comment*/ as developer</p>
+                <p class="fs-6 text-opacity-25">
+                  #webdev #javascript #tutorial #programing
+                </p></a
+              >
+              <a href="" class="rigth__nav-li list-group-item">
+                <p class="rigth__nav-a">Will AI take our Jobs?</p>
+                <p class="fs-6 text-opacity-25">
+                  #ai #javascript #programing #webdev
+                </p></a
+              >
+            </ul>
+          </div>
+        </aside>
+        <!-- End:  Right Aside - Manu -->
+      </section>
+    </section>
+    <!-- End: Principal Content - TEAM 6 -->
+
+    <!-- Footer - Karen -->
+    <footer>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+          <p class="text-center">
+            <a href="#">DEV Community 👩‍💻👨‍💻</a> — A constructive and inclusive
+            social network for software developers. With you every step of your
+            journey.
+          </p>
+        </div>
+        <div class="d-flex">
+          <ul class="d-flex justify-content-center text-center flex-wrap">
+            <li><a href="#" class="text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-decoration-none">Listings</a></li>
+            <li><a href="#" class="text-decoration-none">Podcasts</a></li>
+            <li><a href="#" class="text-decoration-none">Videos</a></li>
+            <li><a href="#" class="text-decoration-none">Tags</a></li>
+            <li><a href="#" class="text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none">Forem Shop</a></li>
+            <li><a href="#" class="text-decoration-none">Sponsors</a></li>
+            <li><a href="#" class="text-decoration-none">About</a></li>
+            <li><a href="#" class="text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-decoration-none">Guides</a></li>
+            <li><a href="#" class="text-decoration-none">Software</a></li>
+          </ul>
+        </div>
+
+        <ul class="d-flex justify-content-center text-center">
+          <li><a href="#" class="text-decoration-none">Code of Conduct</a></li>
+          <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-decoration-none">Terms of use</a></li>
+        </ul>
+        <div class="flex-column align-items-center">
+          <p class="text-center">
+            Built on <a href="#">Forem</a> — the
+            <a href="#">open source</a> software that powers
+            <a href="#">DEV</a> and other inclusive communities.
+          </p>
+          <p class="text-center">
+            Made with love and <a href="#">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻
+            © 2016 - 2023.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer - Karen -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>]
+    <script type="module" src="../Js/component/comments.js"></script>
+    <script type="module" src="../Js/containers/detail.js"></script>
+    <script type="module" src="../Js/main.js"></script>
+  
+    
+    <script
+      type="text/JavaScript"
+      src="https://MomentJS.com/downloads/moment.js"
+    ></script>
+  </body>
+</html>

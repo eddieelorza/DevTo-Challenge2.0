@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32.png"
+    />
+    <title>DEV Community 👩‍💻👨‍💻</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar - Karen -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-white">
+        <div
+          class="container d-flex flex-row justify-content-between align-items-center w-100"
+        >
+          <div class="d-flex align-items-center">
+            <button
+              class="navbar-toggler border border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="../assets/dev-badge.svg"
+                alt="logo"
+                width="40"
+                height="40"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <div
+              class="input-group  input-wrapper border rounded-2 align-items-center d-none d-lg-flex"
+            >
+              <input
+                type="search"
+                class="form-control border border-0"
+                placeholder="Search..."
+                id="search-input"
+              />
+              <div class="input-group-append">
+                <button class="btn" type="button">
+                  <img src="../assets/search-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn-login btn btn-light">
+              Log in
+            </button>
+            <button
+              type="button"
+              class="btn-create btn btn-outline-primary d-none d-lg-inline"
+            >
+              Create Account
+            </button>
+            <img
+              src="../assets/search-icon.svg"
+              alt="search"
+              class="iconsearch d-lg-none"
+              width="24"
+              height="24"
+            />
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            DEV Community 👩‍💻👨‍💻
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <ul class="list-options px-2">
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/home-icon.svg" alt="" />
+              </i>
+              Home
+            </a>
+          </li>
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/listings-icon.svg" alt="" />
+              </i>
+              Listings
+            </a>
+          </li>
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/podcast-icon.svg" alt="" />
+              </i>
+              Podcasts
+            </a>
+          </li>
+          <li class="">
+            <a class="text-decoration-none" href="">
+              <i>
+                <img src="../assets/video-icon.svg" alt="" />
+              </i>
+              Videos
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/tag-icon.svg" alt="" />
+              </i>
+              Tags
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/faq-icon.svg" alt="" />
+              </i>
+              FAQ
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/foremShop-icon.svg" alt="" />
+              </i>
+              Forem Shop
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/sponsors-icon.svg" alt="" />
+              </i>
+              Sponsors
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/about-icon.svg" width="20" alt="" />
+              </i>
+              About
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/contact-icon.svg" width="20" alt="" />
+              </i>
+              Contact
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/guides-icon.svg" width="20" alt="" />
+              </i>
+              Guides
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img
+                  src="../assets/softwareComparison-icon.svg"
+                  width="20"
+                  alt=""
+                />
+              </i>
+              Software comparisons
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list-options px-2">
+          <h6 class="">Other</h6>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/codeConduct-icon.svg" width="20" alt="" />
+              </i>
+              Code of Conduct
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/privacyPolicy-icon.svg" width="20" alt="" />
+              </i>
+              Privacy Policy
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="">
+              <i>
+                <img src="../assets/terms-icon.svg" width="20" alt="" />
+              </i>
+              Terms of Use
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-around px-2">
+          <img src="../assets/tw-icon.svg" alt="" />
+          <img src="../assets/fb-icon.svg" alt="" />
+          <img src="../assets/gh-icon.svg" alt="" />
+          <img src="../assets/ig-icon.svg" alt="" />
+          <img src="../assets/twt-icon.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- End: Navbar - Karen -->
+
+    <!-- Principal Content - TEAM 6 -->
+    <section class="container">
+      <section class="row">
+        <!-- Left Aside - Eddie -->
+
+        <aside class="col-md-3 col-lg-2 d-none d-lg-block d-dm-block mt-2">
+          <div class="card">
+            <div class="card-body-intro">
+              <h2 class="card-intro-login">
+                DEV Community is a community of 1,035,173 amazing developers
+              </h2>
+
+              <p class="card-intro-text">
+                We're a place where coders share, stay up-to-date and grow their
+                careers.
+              </p>
+              <div class="login-buttons">
+                <button
+                  type="button"
+                  class="btn-account btn btn-outline-primary d-none d-lg-inline"
+                >
+                  Create Account
+                </button>
+                <button type="button" class="btn-login btn btn-light">
+                  Log in
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <ul class="list-options">
+              <li class="">
+                <a class="text-decoration-none" href="">
+                  <i>
+                    <img src="../assets/home-icon.svg" alt="" />
+                  </i>
+                  Home
+                </a>
+              </li>
+              <li class="">
+                <a class="text-decoration-none" href="">
+                  <i>
+                    <img src="../assets/listings-icon.svg" alt="" />
+                  </i>
+                  Listings
+                </a>
+              </li>
+              <li class="">
+                <a class="text-decoration-none" href="">
+                  <i>
+                    <img src="../assets/podcast-icon.svg" alt="" />
+                  </i>
+                  Podcasts
+                </a>
+              </li>
+              <li class="">
+                <a class="text-decoration-none" href="">
+                  <i>
+                    <img src="../assets/video-icon.svg" alt="" />
+                  </i>
+                  Videos
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/tag-icon.svg" alt="" />
+                  </i>
+                  Tags
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/faq-icon.svg" alt="" />
+                  </i>
+                  FAQ
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/foremShop-icon.svg" alt="" />
+                  </i>
+                  Forem Shop
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/sponsors-icon.svg" alt="" />
+                  </i>
+                  Sponsors
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/about-icon.svg" width="20" alt="" />
+                  </i>
+                  About
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/contact-icon.svg" width="20" alt="" />
+                  </i>
+                  Contact
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/guides-icon.svg" width="20" alt="" />
+                  </i>
+                  Guides
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img
+                      src="../assets/softwareComparison-icon.svg"
+                      width="20"
+                      alt=""
+                    />
+                  </i>
+                  Software comparisons
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="py-3">Other</h6>
+            <ul class="list-options">
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img
+                      src="../assets/codeConduct-icon.svg"
+                      width="20"
+                      alt=""
+                    />
+                  </i>
+                  Code of Conduct
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img
+                      src="../assets/privacyPolicy-icon.svg"
+                      width="20"
+                      alt=""
+                    />
+                  </i>
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="">
+                  <i>
+                    <img src="../assets/terms-icon.svg" width="20" alt="" />
+                  </i>
+                  Terms of Use
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-around py-4">
+            <img src="../assets/tw-icon.svg" alt="" />
+            <img src="../assets/fb-icon.svg" alt="" />
+            <img src="../assets/gh-icon.svg" alt="" />
+            <img src="../assets/ig-icon.svg" alt="" />
+            <img src="../assets/twt-icon.svg" alt="" />
+          </div>
+          <div>
+            <div class="d-flex justify-content-between">
+              <h6>My Tags</h6>
+              <span>
+                <img src="../assets/crayons-icon.svg" alt="" />
+              </span>
+            </div>
+            <div class="list-tags">
+              <ul class="list-options">
+                <li><a class="" href="">#webdev</a></li>
+                <li><a class="" href="">#javascript</a></li>
+                <li><a class="" href="">#css</a></li>
+                <li><a class="" href="">#vscode</a></li>
+                <li><a class="" href="">#git</a></li>
+                <li><a class="" href="">#react</a></li>
+                <li><a class="" href="">#devops</a></li>
+                <li><a class="" href="">#swift</a></li>
+                <li><a class="" href="">#kotlin</a></li>
+                <li><a class="" href="">#aws</a></li>
+                <li><a class="" href="">#angular</a></li>
+                <li><a class="" href="">#docker</a></li>
+                <li><a class="" href="">#python</a></li>
+                <li><a class="" href="">#ruby</a></li>
+                <li><a class="" href="">#rails</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img
+                src="../assets/image-bg-card.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title fs-6">
+                  Calling all early-career developers & coding mentors!
+                </h6>
+                <p class="card-text">
+                  Join CodeNewbie Community: a supportive space for coding
+                  newbies to connect & express themselves.
+                </p>
+                <a href="#" class="">→Get in on the fun!</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!--End: Left Aside - Eddie -->
+
+        <!--Principal Main - Eddie -->
+        <main class="col-12 col-md-9 col-lg-7">
+          <div class="tabbar-main">
+            <ul class="nav nav-tabs fs-5">
+              <li class="nav-items">
+                <a class="nav-link text-black " id="relevant" href="#">Relevant</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link text-black" id="latest" href="#">Latest</a>
+              </li>
+
+            </ul>
+          </div>
+          <section id="container-wrapper">
+
+          </section>
+        </main>
+        <!--End: Principal Main - Eddie -->
+
+        <!-- Right Aside - Manu-->
+        <aside class="col-lg-3 fs-6 d-none d-sm-none d-md-none d-lg-block">
+          <div class="card my-3">
+            <a href=""
+              ><img
+                src="../assets/image-banner-aside-right.webp"
+                class="card-img-top rounded"
+                alt="..."
+            /></a>
+            <ul class="list-group list-group-flush border border-0">
+              <li class="list-group-item fw-bold bg-light fs-4">
+                <a class="rigth__nav-a text-black text-decoration-none" href=""
+                  >Linode + DEV Hackathon (7)</a
+                >
+              </li>
+
+              <a class="text-decoration-none" href=""
+                ><li class="rigth__nav-li list-group-item bg-light p-3">
+                  <p class="rigth__nav-a text-black">Linode + DEV Hackathon</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li class="rigth__nav-li list-group-item bg-light p-3">
+                  <p class="rigth__nav-a text-black">Linode + DEV Hackathon</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li class="rigth__nav-li list-group-item bg-light p-3">
+                  <p class="rigth__nav-a text-black">
+                    Announcing the Linode + DEV Hackathon!
+                  </p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li class="rigth__nav-li list-group-item bg-light p-3">
+                  <p class="rigth__nav-a text-black">
+                    Community Discussion Thread — Linode + DEV Hackathon
+                  </p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="rigth__nav-li list-group-item border border-0 bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Unique Project Ideas for the Linode + DEV Hackathon
+                  </p>
+                </li></a
+              >
+
+              <li class="list-group-item bg-light">
+                <div class="d-grid gap-2 mt-4">
+                  <button class="btn btn-primary" type="button">
+                    Share your project
+                  </button>
+                  <button
+                    class="btn btn-secondary text-black border border-0"
+                    type="button"
+                  >
+                    See all photos
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card my-3">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-light"
+              >
+                <p class="d-inline fw-bold fs-5">Listings</p>
+                <a class="text-decoration-none" href="">See all</a>
+              </li>
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Cyber Security Competition "VU Cyberthon 2023"
+                  </p>
+                  <p>events</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Need elite engineering talent for hire?
+                  </p>
+                  <p>forhire</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Product Focused Principal Front End Engineer
+                  </p>
+                  <p>forhire</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Content Writer and Social Media Manager
+                  </p>
+                  <p>forhire</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Exciting news for Snowflake users! ❄️🎉
+                  </p>
+                  <p>products</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light text-center"
+                >
+                  <p
+                    class="rigth__nav-a text-decoration-none text-black fw-bold fs-6"
+                  >
+                    Create a Lsiting
+                  </p>
+                </li></a
+              >
+            </ul>
+          </div>
+          <div class="card my-3">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-light"
+              >
+                <a
+                  class="rigth__nav-a text-decoration-none text-black fs-5 fw-bold"
+                  href=""
+                  >#help</a
+                >
+              </li>
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Help needed for reviewing my first Vue app
+                  </p>
+                  <p class="bg-warning d-inline p-1 rounded">New</p>
+                </li></a
+              >
+            </ul>
+          </div>
+          <div class="card my-3">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center bg-light"
+              >
+                <a
+                  class="rigth__nav-a text-decoration-none text-black fs-5 fw-bold"
+                  href=""
+                  >#discuss</a
+                >
+              </li>
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    The Dark Side of Directing Your Customers to Zapier for
+                    Integrations
+                  </p>
+                  <p class="bg-warning d-inline p-1 rounded">New</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    5 years of *professional* coding (OR how I earn money while
+                    having fun)
+                  </p>
+                  <p class="bg-warning d-inline p-1 rounded">New</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    CHALLENGE: Describe AI in five words or less.
+                  </p>
+                  <p class="text-opacity-75">22 comments</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">Meme Monday 👁</p>
+                  <p class="text-opacity-75">88 comments</p>
+                </li></a
+              >
+              <a class="text-decoration-none" href=""
+                ><li
+                  class="list-group-item rigth__nav-li list-group-item bg-light p-3"
+                >
+                  <p class="rigth__nav-a text-black">
+                    Music Monday — What are you listening to? (60's Edition)
+                  </p>
+                  <p class="text-opacity-75">19 comments</p>
+                </li></a
+              >
+            </ul>
+          </div>
+        </aside>
+        <!-- End:  Right Aside - Manu -->
+      </section>
+    </section>
+    <!-- End: Principal Content - TEAM 6 -->
+
+    <!-- Footer - Karen -->
+    <footer>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+          <p class="text-center">
+            <a href="#">DEV Community 👩‍💻👨‍💻</a> — A constructive and inclusive
+            social network for software developers. With you every step of your
+            journey.
+          </p>
+        </div>
+        <div class="d-flex">
+          <ul class="d-flex justify-content-center text-center flex-wrap">
+            <li><a href="#" class="text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-decoration-none">Listings</a></li>
+            <li><a href="#" class="text-decoration-none">Podcasts</a></li>
+            <li><a href="#" class="text-decoration-none">Videos</a></li>
+            <li><a href="#" class="text-decoration-none">Tags</a></li>
+            <li><a href="#" class="text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none">Forem Shop</a></li>
+            <li><a href="#" class="text-decoration-none">Sponsors</a></li>
+            <li><a href="#" class="text-decoration-none">About</a></li>
+            <li><a href="#" class="text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-decoration-none">Guides</a></li>
+            <li><a href="#" class="text-decoration-none">Software</a></li>
+          </ul>
+        </div>
+
+        <ul class="d-flex justify-content-center text-center">
+          <li><a href="#" class="text-decoration-none">Code of Conduct</a></li>
+          <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-decoration-none">Terms of use</a></li>
+        </ul>
+        <div class="flex-column align-items-center">
+          <p class="text-center">
+            Built on <a href="#">Forem</a> — the
+            <a href="#">open source</a> software that powers
+            <a href="#">DEV</a> and other inclusive communities.
+          </p>
+          <p class="text-center">
+            Made with love and <a href="#">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻
+            © 2016 - 2023.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer - Karen -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./Js/main.js"></script>
+    <script
+      type="text/JavaScript"
+      src="https://MomentJS.com/downloads/moment.js"
+    ></script>
+  </body>
+</html>

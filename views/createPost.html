@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>New Post</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bg-transparent">
+            <div class="container d-flex flex-row  align-items-center w-100 ">
+                <div class="container d-flex flex-row align-items-center justify-content-between">
+                    <div class="d-flex align-items-center ">
+                        <a class="navbar-brand" href="#">
+                            <img src="../assets/dev-badge.svg" alt="logo" width="0" height="40" class="d-inline-block align-text-top">
+                        </a>
+                        <span>Create Post</span>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-md-start ">
+                        <button type="button" id="id-edit" class="btn btn-hover">Edit</button>
+                        <button type="button" id="id-preview" class="btn btn-hover">Preview</button>
+
+                    </div>
+                    <button type="button" class="btn-close" aria-label="Close" id="button1" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+
+                </div>
+            </div>
+         
+        </nav>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">You have unsaved changes</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                You've made changes to your post. Do you want to navigate to leave this page?
+            </div>
+            
+            <div class="modal-footer">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-8 col-sm-6">
+                                <button type="button" id="leave-btn" class="btn btn-danger">Yes, leave the page</button>
+                                
+                            </div>
+                            <div class="col-4 col-sm-6">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">No, keep editing</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
+  <section class="container post-container">
+    <form action="" class="post-wrapper rounded p-4" id="list-input">
+        <div class="form-group">
+            <input type="text" class="form-control input-element" id="key-image" placeholder="link a cover image"  value="" name="image">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control input-element" id="key-title"  value="" name="title" placeholder="New post title here...">
+        </div>
+        <div class="form-group ">
+            <div class="tag-box">
+            <ul id="tag-list"></ul>
+                <input type="text" class="form-control input-element" id="key-tag"  value="" name="Tag" placeholder="Add up to 4 tags...">
+                
+            </div>
+            <div class="tag-alert">
+                <span>You can only add 4 tags</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control input-element" id="key-author"  value="" name="author" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control input-element"  id="key-content" name="content" rows="3" placeholder="Write your post here..." 
+            ></textarea>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="key-relevant" name="relevant" value="false" id="invalidCheck" >
+            <label class="form-check-label" for="invalidCheck">
+            This post is relevant
+            </label>
+        </div>
+        
+
+    </form>
+    <form action="" class="post-wrapper rounded p-5" id="preview">
+        <section class="preview-wrapper p-5">
+            <div class="form-group">
+                <span >
+                    <img id="preview-image" src="" alt="">
+                </span>
+            </div>
+            <div class="form-group">
+                <h2 id="preview-title" class="fs-1 fw-bold">Title</h2>
+            </div>
+            <div class="form-group ">
+                <div class="tag-box">
+                <ul id="preview-tag-list"></ul>
+                    
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <span id="preview-author">Author</span>
+            </div>
+            <div class="form-group">
+                <p id="preview-content">Content</p>
+            </div>
+            <div class="form-check">
+                <span id="preview-relevant">Relevant</span>
+            </div>
+        </section>
+
+        
+
+    </form>
+    <div class="form-group py-3">
+        <button type="button" id="add-button" class="btn btn-primary ">Publish</button>
+    </div>
+
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>   
+    <script type="module" src="../Js//containers/createPost.js"
+    ></script>
+</body>
+</html>

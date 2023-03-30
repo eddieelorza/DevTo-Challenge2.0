@@ -1,0 +1,13 @@
+@import "../modules/_globals";
+
+footer {
+  width: 100%;
+  background-color: rgb(221, 222, 225);
+  padding: 2em;
+  ul {
+    width: 100%;
+    li {
+      margin: 0 1rem;
+    }
+  }
+}

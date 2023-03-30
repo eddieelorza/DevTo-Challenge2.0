@@ -1,0 +1,61 @@
+@import "../modules/_globals";
+
+.left-aside {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #f5f5f5;
+  &__div {
+    &-button {
+      background-color: #f5f5f5;
+      border: none;
+      img {
+        width: 3rem;
+      }
+      .msj {
+        transition: all 1s;
+      }
+      &:hover {
+        .heart {
+          background-color: hsla(0, 50%, 69%, 0.452);
+        }
+        .comment {
+          background-color: hsla(36, 68%, 77%, 0.452);
+        }
+        .save {
+          background-color: hsla(236, 82%, 78%, 0.452);
+        }
+        .dots {
+          background-color: hsla(0, 0%, 79%, 0.452);
+        }
+        .msj {
+          text-align: center;
+          display: block !important;
+          top: -50%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .left-aside {
+    position: sticky !important;
+    justify-content: center;
+    align-items: center;
+    &__div {
+      &-button {
+        &:hover {
+          .msj {
+            top: 80%;
+          }
+        }
+      }
+    }
+  }
+  .d-md-block {
+    width: 100%;
+  }
+}
