@@ -35,21 +35,22 @@
   margin-bottom: 2em;
 
   li {
-    margin: 0 0.5em;
+    margin-right: 1em;
     color: $syntax-comment-color;
     cursor: pointer;
     padding: 0.2em;
     font-size: 0.9em;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid $syntax-comment-color;
+      border-radius: 0.5em;
+      background: #ECECEC;
+      cursor: pointer;
+    }
   }
 
 
-  li:hover {
-    border: 1px solid $syntax-comment-color;
-    border-radius: 0.5em;
-    background: #ECECEC;
-    
-    cursor: pointer;
-  }
+
 }
 
 .card-img-cover {
