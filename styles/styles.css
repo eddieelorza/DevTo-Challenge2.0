@@ -138,6 +138,22 @@
 .input-wrapper {
   width: 25rem;
 }
+.input-wrapper input {
+  border: 1px solid rgb(59, 73, 223);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+.input-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.input-wrapper:focus-within {
+  box-shadow: 0 0 0 0.15rem rgb(59, 73, 223);
+}
+.input-wrapper:hover {
+  box-shadow: 0 0 0 0.1rem rgb(142, 151, 255);
+}
 
 footer {
   width: 100%;
@@ -200,6 +216,11 @@ footer ul li {
   border-radius: 0.5em;
   background: #ECECEC;
   cursor: pointer;
+}
+.list-tag__main li::nth-child(1) {
+  border: 1px solid #808080;
+  border-radius: 0.5em;
+  background: #ECECEC;
 }
 
 .card-img-cover {

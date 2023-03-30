@@ -47,6 +47,12 @@
       background: #ECECEC;
       cursor: pointer;
     }
+
+    &::nth-child(1) {
+      border: 1px solid $syntax-comment-color;
+      border-radius: 0.5em;
+      background: #ECECEC;
+    }
   }
 
 

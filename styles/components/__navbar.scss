@@ -54,5 +54,23 @@
 
 .input-wrapper{
   width: 25rem;
+
+  input{
+    border: 1px solid rgb(59, 73, 223);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  
+  &:focus-within{
+    box-shadow: 0 0 0 0.15rem rgb(59, 73, 223);
+  }
+  &:hover{
+    box-shadow: 0 0 0 0.1rem rgb(142, 151, 255);
+  }
   
 }
